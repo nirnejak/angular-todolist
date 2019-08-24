@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-10">
+    <input (change)="onToggle(todo)" type="checkbox" name="" id="{{todo.id}}">
+    <label for="{{todo.id}}" [ngClass]="setClasses()">{{todo.title}}</label>
+  </div>
+  <div class="col-2">
+    <button (click)="onDelete(todo)">Delete</button>
+  </div>
+</div>
